@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+	<!-- 实体类,简称：别名 aplication里面 typeAliasesPackage -->
+	<typeAliases>
+		<typeAlias alias="Book" type="com.zzb.xml.Book" />
+	</typeAliases>
+	<!-- 如果不要一个一个写可以在aplication 里面 mapperLocations通配符 -->
+	<mappers>
+		<!-- sql映射文件路径 <mapper resource="com/zzb/dao/UserDao.xml" /> -->
+		<mapper resource="com/zzb/dao3/BookMapperDAO.xml" />
+	</mappers>
+  
+</configuration>  
